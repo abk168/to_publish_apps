@@ -1,0 +1,15 @@
+<odoo>
+    <record id="Stock_picking_form_inherit" model="ir.ui.view">
+        <field name="model">stock.picking</field>
+        <field name="name">stock.picking.form.inherit</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="is_invoiced" invisible="1"/>
+                <field name="inv_ref" invisible="1"/>
+                <field name="sale_id"/>
+
+            </xpath>
+        </field>
+    </record>
+</odoo>
