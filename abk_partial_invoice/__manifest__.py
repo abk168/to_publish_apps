@@ -42,7 +42,7 @@ Key Features:
         'base',
         'sale',
         'sale_management',
-        'account_accountant',
+        'account',
         'stock',
     ],
     'data': [
